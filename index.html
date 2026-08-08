@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chango&family=Creepster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="sheep">Sheep Counter!</h1>
+        <h3>Track how many <a class="sheep"> sheep<a> you can count before falling asleep. <br> Each<a class="wolf"> wolf</a> logs your number of sheep and resets the counter.<br> Be careful! The <a class="wolf">wolves</a> are sneaky!</h3>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" class="sheep" onclick="increment()">SHEEP</button>
+        <button id="save-btn" class="wolf" onclick="save()">WOLF</button>
+        <p id="save-el">Previous entries: </p>
+        <div id="animal-cage">
+            <img id="animal" class="animal-sprite" src="shep.svg" />
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
